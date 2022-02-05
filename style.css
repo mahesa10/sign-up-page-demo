@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Convergence&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(300, 6%, 98%);
+  font-size: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #101110;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+aside {
+  width: 45vw;
+  background-image: url("./images/bromo-by-fajruddin.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  margin-top: 120px;
+  color: white;
+  gap: 8px;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+}
+
+.logo-img {
+  width: 40px;
+}
+
+.logo-text {
+  font-size: 32px;
+  font-family: 'Convergence', sans-serif;
+}
+
+aside > p {
+  color: rgba(255,255,255,0.8);
+  font-size: 1rem;
+}
+
+aside > p > a {
+  color: rgba(255,255,255,0.8);
+}
+
+.form-header {
+  padding: 0 54px;
+}
+
+.form-header h1 {
+  font-size: 1.75rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+form h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+section.fill-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #fff;
+  padding: 30px 54px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+fieldset > div {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: hsl(120, 3%, 45%);
+  font-size: 0.9rem;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+input {
+  height: 32px;
+  width: 240px;
+  border: 1px solid #E7E9ED;
+  border-radius: 4px;
+  outline: none;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0 12px;
+  margin-top: 8px;
+}
+
+input:focus {
+  border: 1px solid #6285E5;
+  box-shadow: 2px 2px 4px hsl(0, 0%, 80%);
+}
+
+#pwd:invalid {
+  border: 1px solid red;
+}
+
+#pwd:invalid + span::before {
+  content: "* Passwords must be at least 6 character";
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: red;
+}
+
+.confirm-pwd-mismatch, .confirm-pwd-mismatch:focus {
+  border: 1px solid red;
+}
+
+.confirm-pwd-error::before {
+  content: "* Passwords do not match";
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: red;
+}
+
+button {
+  width: fit-content;
+  margin-left: 54px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  font-family: inherit;
+  border-radius: 8px;
+  background-color: #5B505B;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(300, 6%, 55%);
+}
+
+p.sign-in {
+  margin-left: 54px;
+  font-size: 1rem;
+}
+
+p.sign-in a {
+  color: hsl(300, 6%, 50%);
+  text-decoration: none;
+}
